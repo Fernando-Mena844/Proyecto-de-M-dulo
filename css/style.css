@@ -248,6 +248,12 @@ header {
   font-weight: 500;
   font-size: 50px;
 }
+<<<<<<< HEAD
+=======
+.main-content h2{
+  color: #000000;
+}
+>>>>>>> eaf9a71 (Cambios fernando)
 .main-content p{
   font-weight: 300;
   font-size: 19px;
@@ -257,13 +263,20 @@ header {
   border-radius: 15px;
 }
 .contenido{
+<<<<<<< HEAD
   flex-direction: row;
+=======
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+>>>>>>> eaf9a71 (Cambios fernando)
   padding: 20px;
   text-align: center;
   background-color: #ebe1e4;
 }
 .contenido2{
   text-align: center;
+<<<<<<< HEAD
   flex-direction: column;
   background-color: #1a2b3c;
   padding: 20px;
@@ -271,11 +284,38 @@ header {
 }
 .contenido2 img{
   width: 500px;
+=======
+  align-items: center;
+  padding: 20px;
+  background-color: #8a8a8a;
+  text-align: center;
+  width: 47%;
+  border-radius: 10%;
+  margin-right: 50px;
+}
+.contenido2 img{
+  width: 500px;
+  padding: 0px;
+  margin: 0px;
+>>>>>>> eaf9a71 (Cambios fernando)
 }
 .contenido2 h1{
   font-weight: 500;
   font-size: 50px;
 }
+<<<<<<< HEAD
+=======
+.contenido3{
+  background-color: #1a2b3c;
+  color: #fdfdfc;
+  border-radius: 10%;
+  align-items: center;
+}
+.contenido p{
+  text-align: left;
+  padding: 10px 35px 10px 35px;
+}
+>>>>>>> eaf9a71 (Cambios fernando)
 h1 {
   color: #fdfdfc;
   font-family: "Inknut Antiqua";
