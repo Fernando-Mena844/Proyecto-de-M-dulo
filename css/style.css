@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+  background-color: #9c9a9a;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8a8a8a;
+  transition: margin-left 0.3s;
+
+}
+/*logo*/
+.logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #37506e;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.sidebar a {
+  display: block;
+  color: #ffffff;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+  border-bottom: 1px solid #fdfdfc;
+  transition: 0.3s;
+  font-family: "Inter";
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* Checkbox oculto para controlar el menú */
+#menu-toggle {
+  display: none;
+}
+
+/* Botón de menú hamburguesa */
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+}
+
+.menu-btn div {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+
+/* Abrir el menú cuando el checkbox está activado */
+#menu-toggle:checked ~ .sidebar {
+  width: 250px;
+}
+
+#menu-toggle:checked ~ .main-content {
+  margin-left: 250px;
+}
+
+/* Animación del botón hamburguesa */
+#menu-toggle:checked + .menu-btn div:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-btn div:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-btn div:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Contenido principal */
+.main-content {
+  transition: margin-left 0.3s;
+  padding: 20px;
+  text-align: center;
+  background-color: #ebe1e4;
+}
+.main-content h1{
+  font-weight: 500;
+  font-size: 50px;
+}
+.main-content p{
+  font-weight: 300;
+  font-size: 19px;
+  color: #37506e;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.contenido{
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+  background-color: #ebe1e4;
+}
+.contenido2{
+  text-align: center;
+  flex-direction: column;
+  background-color: #1a2b3c;
+  padding: 20px;
+  text-align: center;
+}
+.contenido2 img{
+  width: 500px;
+}
+.contenido2 h1{
+  font-weight: 500;
+  font-size: 50px;
+}
+h1 {
+  color: #fdfdfc;
+  font-family: "Inknut Antiqua";
+  background-color: #000000;
+  padding: 10px;
+}
+
+p {
+  color: #fdfdfc;
+  font-family: "Inter";
+}
+/*los pedidos*/
+body {
+  background-color: #f5f5dc;
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #b3b3b3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.row {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+ 
+.card {
+  background-color: #c7c7c7;
+  width: 30%;
+  margin: 1%;
+  float: left;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+}
+ 
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card h3 {
+  margin-top: 10px;
+  font-family: "Inter";
+}
+
+/*footer*/
+.footer{
+
+  flex: 1;
+  background-color: black;
+  font-family: "Inter";
+  text-align: center;
+  color: white;
+}
+/*button*/
+.button{
+  color: #000000;
+  background-color: #e03e1a;
+}
+/*card2*/
+.card2 {
+  background-color: #c7c7c7;
+  width: 30%;
+  margin: 1%;
+  float: left;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+}
+ 
+.card2 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card2 h3 {
+  margin-top: 10px;
+}
+/*coentarios*/
+.main-content {
+  transition: margin-left 0.3s;
+  padding: 20px;
+  text-align: center;
+  background-color: #ebe1e4;
+}
+.main-content h1{
+  font-weight: 500;
+  font-size: 50px;
+}
+.main-content p{
+  font-weight: 300;
+  font-size: 19px;
+  color: #37506e;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.contenido{
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+  background-color: #ebe1e4;
+}
+.contenido2{
+  text-align: center;
+  flex-direction: column;
+  background-color: #1a2b3c;
+  padding: 20px;
+  text-align: center;
+}
+.contenido2 img{
+  width: 500px;
+}
+.contenido2 h1{
+  font-weight: 500;
+  font-size: 50px;
+}
+h1 {
+  color: #fdfdfc;
+  font-family: "Inknut Antiqua";
+  background-color: #000000;
+  padding: 10px;
+}
+
+.dos {
+  color: #fdfdfc;
+  font-family: "Inknut Antiqua";
+  background-color: #000000;
+  padding: 10px;
+}
