@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
   background-color: #9c9a9a;
@@ -127,6 +126,7 @@ body {
   font-weight: 300;
   font-size: 19px;
   color: #37506e;
+  text-align: justify;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
@@ -265,6 +265,7 @@ header {
   flex-direction: row;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: stretch;
   padding: 20px;
   text-align: center;
@@ -273,7 +274,10 @@ header {
 .contenido2{
   text-align: center;
   flex-direction: column;
-  background-color: #1a2b3c;
+  background-color: #8a8a8a;
+  width: 47%;
+  border-radius: 10%;
+  font-size: 20px;
   padding: 20px;
   text-align: center;
 }
@@ -281,7 +285,6 @@ header {
   width: 500px;
   align-items: center;
   padding: 20px;
-  background-color: #8a8a8a;
   text-align: center;
   width: 47%;
   border-radius: 10%;
@@ -324,16 +327,31 @@ h1 {
 }
 @media (max-width: 768px) {
   .contenido {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 10px;
   }
-
+  .contenido p {
+    padding: 10px;
+    text-align: center;
+  }
+  .contenido2{
+    width: 90%;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
+  }
+  .contenido2 p{
+    font-size: 17px;
+  }
   .contenido2 img {
     width: 90%;
-    margin: 10px auto;
+    margin: 0;
     display: block;
   }
-
+  .contenido3{
+    border-radius: 10%;
+  }
   .card, .card2 {
     width: 90%;
     float: none;
@@ -347,10 +365,4 @@ h1 {
   .main-content p {
     font-size: 16px;
   }
-
-  .contenido p {
-    padding: 10px;
-    text-align: center;
-  }
 }
- 
